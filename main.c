@@ -54,7 +54,7 @@ void bubble (int work[], const int size, int (*compare)
                
              bubble(a, SIZE, descending );
 
-             printf("\n Data items in descending order:\n ")
+             printf("\n Data items in descending order:\n ");
 	       
 
 	    }
@@ -64,7 +64,7 @@ void bubble (int work[], const int size, int (*compare)
 
 	    for (counter =0; counter < SIZE; counter ++)
 	    {
-	    	printf("5%d" a, [ counter ] );
+	    	printf("5%d", a [ counter ] );
 	    }
            
            printf("\n" );
@@ -90,7 +90,7 @@ void bubble (int work[], const int size, int (*compare)
 
    	   /* here goes the loop for control */ 
    	for (pass = 1; pass = < size; pass++)
-   		{  /* now to cntrol how many comparisons per pass, I need 
+	   { /* now to cntrol how many comparisons per pass, I need 
    			another loop */ 
 
    		  for ( count = 0; count < size - 1; count++)
@@ -99,14 +99,15 @@ void bubble (int work[], const int size, int (*compare)
 
    		  	if ((*compare) (work [ count ], work [ count + 1 ]) ) 
    		  	{
-   		  		 swap(&work [ count ], &work [count], &work [ count + 1] ) )
-             }
-   		  }
-
-
-
-   		}
+   		  		 swap(&work [ count ], &work [count], &work [ count + 1] ) )}
+		  }
+                }
+   		  
    	}
+ 
+
+   		
+   
 
 
 
@@ -124,10 +125,10 @@ void bubble (int work[], const int size, int (*compare)
        *element1Ptr = *element2Ptr; 
        *element2Ptr = hold; 
 
-} /* this swap func, is very intressting to me.So much it deserves a study. 
+     } /* this swap func, is very intressting to me.So much it deserves a study. 
  Element point 1 = integer hold. Then element point 2 is the same as element ptr 1. 
  So all of them are hold now.  Incredibly fascinating*/ 
-    T
+    
 
  int ascending ( int a, int b)
  {
