@@ -1,1 +1,0 @@
-# C-Pointers-to-Functions---Quick-Sort-data.-
