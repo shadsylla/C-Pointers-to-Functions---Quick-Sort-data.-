@@ -11,15 +11,14 @@ void bubble (int work[], const int size, int (*compare)
 	int descending ( int a, int b ); 
 
 
-	int main()
+
+	int main(int argc, char *argv[])
 	{
 		int order; /* this is 1 for ascending order and 
 		2 for descending order */ 
 		int counter; /* counter */ 
 
-
 		/*initialize array */ 
-
 		int a [ SIZE ] = {2, 6, 4, 8, 10, 12, 89, 68, 45, 37};
 
 		printf("Enter 1 to sort in ascending order, \n"
@@ -34,46 +33,39 @@ void bubble (int work[], const int size, int (*compare)
 		for (counter = 0; counter < SIZE; counter++)
 		{
 			printf("5%d", a[ counter ] ); 
-
-		}
+		} /* end of for loop*/
 
 		/* Here I will sort the array by ascending order. And 
 		 Pass func ascending as an argument to calrify the ascending 
-		  sorting order */ 
+		 sorting order */ 
 
 		if ( order == 1 )
 		{
 			bubble( a, SIZE, ascending ); 
 			printf( "\nData items in ascending order \n");
 
-	    } 
+	  	} /* end of if statements*/
+		
 	    /* here I will provide in which condition the sorting 
 	       is done in an descending manner.*/
-
-	    else { 
-               
+	    else {
              bubble(a, SIZE, descending );
 
-             printf("\n Data items in descending order:\n ");
-	       
-
-	    }
-
+             printf("\n Data items in descending order:\n"; 
+	    }/*end of else*/
 
 	    /* print on taht screen our sorted data */ 
 
 	    for (counter =0; counter < SIZE; counter ++)
 	    {
 	    	printf("5%d", a [ counter ] );
-	    }
+	    }/* end of for loop */
            
            printf("\n" );
 
+           return 0; /* indicates good termination */
 
-           return 0; /* indicates good termination*/
-
-
-	} // end of the main
+	} /*end of main.*/ 
 
 
 
@@ -103,14 +95,7 @@ void bubble (int work[], const int size, int (*compare)
 		  }
                 }
    		  
-   	}
- 
-
-   		
-   
-
-
-
+   	}/* end of for*/
    } /*end func bubble */
 
 
@@ -140,4 +125,4 @@ void bubble (int work[], const int size, int (*compare)
   int descending(int a, int b )
   {
 	return b > a;  /* vice versa with the previous func. */
-  }
+  } /*end of func descending*/ 
